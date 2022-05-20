@@ -10,6 +10,14 @@ class OnBoardingView extends StatefulWidget {
 class _OnBoardingViewState extends State<OnBoardingView> {
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      body: SafeArea(
+        child: Center(
+          child: Text(
+            'Jai Bajrang Bali',
+          ),
+        ),
+      ),
+    );
   }
 }
