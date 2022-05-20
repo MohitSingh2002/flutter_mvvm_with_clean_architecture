@@ -5,6 +5,7 @@ import 'package:flutter_mvvm_with_clean_architecture/presentation/login/login.da
 import 'package:flutter_mvvm_with_clean_architecture/presentation/main/main_view.dart';
 import 'package:flutter_mvvm_with_clean_architecture/presentation/onboarding/onboarding.dart';
 import 'package:flutter_mvvm_with_clean_architecture/presentation/register/register.dart';
+import 'package:flutter_mvvm_with_clean_architecture/presentation/resources/strings_manager.dart';
 import 'package:flutter_mvvm_with_clean_architecture/presentation/splash/splash.dart';
 import 'package:flutter_mvvm_with_clean_architecture/presentation/store_details/store_details.dart';
 
@@ -46,11 +47,11 @@ class RouteGenerator {
   static Route<dynamic> undefinedRoute() {
     return MaterialPageRoute(builder: (_) => Scaffold(
       appBar: AppBar(
-        title: Text('No Route Found',),
+        title: Text(AppStrings.noRouteFound,),
       ),
       body: SafeArea(
         child: Center(
-          child: Text('No Route Found',),
+          child: Text(AppStrings.noRouteFound,),
         ),
       ),
     ));
